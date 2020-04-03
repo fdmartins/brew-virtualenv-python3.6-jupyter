@@ -4,12 +4,13 @@ Estamos focando na versão 3.6.5_1 pois, até inicio de 2020, é a melhor versã
 
 
 
-#### Verifique as versões atuais
+### Verifique as versões atuais
 ```bash
 brew info python
 ```
-### Para instalar a versão 3.6.5
+### Instalar Python 3.6.5
 Caso o comando acime não tenha a versão 3.6.5, instale executando:
+
 ```bash
 brew unlink python
 
@@ -26,7 +27,12 @@ python3 --version
 python 3.6.5_1
 
 
-Execute o pip3 e veja se não aparece erros como:'SSLError("Can't connect to HTTPS URL because the SSL module is not available.", se sim, sera necessario executar o comando abaixo e repetir o processo acima.
+To install virtualenv via pip run:
+```bash
+pip3 install virtualenv
+```
+
+Se aparece erros como:'SSLError("Can't connect to HTTPS URL because the SSL module is not available.", sera necessario executar o comando abaixo e repetir todo processo de insalação acima.
 
 ```bash
 brew update && brew upgrade
@@ -34,12 +40,6 @@ brew uninstall --ignore-dependencies openssl
 brew install https://github.com/tebelorg/Tump/releases/download/v1.0.0/openssl.rb
 ```
 
-
-##### Installation
-To install virtualenv via pip run:
-```bash
-pip3 install virtualenv
-```
 
 ##### Usage
 Creation of virtualenv.
@@ -62,7 +62,7 @@ Para sair do virtualenv:
 ```bash
 deactivate
 ```
-##### Instalar Jupyter Notebook
+#### Instalar Jupyter Notebook
 
 ```bash
 pip install jupyterlab
