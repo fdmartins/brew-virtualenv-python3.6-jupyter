@@ -1,6 +1,8 @@
 # fdmartins
 Criando Ambiente Virtual Python3.6 e macOS Catalina
 
+
+
 #### Verifique as versões atuais
 ```bash
 brew info python
@@ -23,6 +25,15 @@ python3 --version
 python 3.6.5_1
 
 
+Execute o pip3 e veja se não aparece erros como:'SSLError("Can't connect to HTTPS URL because the SSL module is not available.", se sim, sera necessario executar o comando abaixo e repetir o processo acima.
+
+```bash
+brew update && brew upgrade
+brew uninstall --ignore-dependencies openssl
+brew install https://github.com/tebelorg/Tump/releases/download/v1.0.0/openssl.rb
+```
+
+
 ##### Installation
 To install virtualenv via pip run:
 ```bash
@@ -41,8 +52,22 @@ Activate the virtualenv:
 workon machinelearning
 ```
 
-Deactivate the virtualenv:
+Verique se a versão do python dentro do ambiente virtual esta correta.
+```bash
+python --version
+```
+
+Para sair do virtualenv:
 ```bash
 deactivate
 ```
+##### Instalar Jupyter Notebook
 
+```bash
+pip install jupyterlab
+```
+
+##### Executar Jupyter Notebook
+```bash
+jupyter notebook
+```
