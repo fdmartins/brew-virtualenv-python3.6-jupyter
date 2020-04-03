@@ -16,41 +16,33 @@ brew switch python 3.6.5_1
 
 ```
 
-execute o comando abaixo para ver se a versão do python3 está a que você precisa:
+execute o comando abaixo para ver se a versão do python3 é a que você precisa:
 ```bash
 python3 --version
 ```
+python 3.6.5_1
 
-
-##### Requirements
-* Python 3
-* Pip 3
-
-```bash
-$ brew install python3
-```
-
-Pip3 is installed with Python3
 
 ##### Installation
 To install virtualenv via pip run:
 ```bash
-$ pip3 install virtualenv
+pip3 install virtualenv
 ```
 
 ##### Usage
-Creation of virtualenv:
+Creation of virtualenv.
+Aqui usamos o nome machinelearning.
 ```bash
-$ virtualenv -p python3 <desired-path>
+virtualenv -p python3 ~/.virtualenvs/machinelearning
 ```
 
 Activate the virtualenv:
 ```bash
-$ source <desired-path>/bin/activate
+workon machinelearning
 ```
 
 Deactivate the virtualenv:
 ```bash
-$ deactivate
+deactivate
 ```
 
