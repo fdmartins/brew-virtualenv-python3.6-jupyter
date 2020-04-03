@@ -1,5 +1,6 @@
 # fdmartins
-Criando Ambiente Virtual Python3.6 e macOS Catalina
+Criando Ambiente Virtual Python3.6 e macOS Catalina.
+Estamos focando na versão 3.6.5_1 pois, até inicio de 2020, é a melhor versão compativel com opencv, keras, tensorflow e outras bibliotecas de machine learning.
 
 
 
